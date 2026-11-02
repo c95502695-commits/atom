@@ -18,6 +18,11 @@ A fast RSS / Atom reader for Windows 11, built with Electron and styled after Fl
 
 Data is stored as JSON in `%APPDATA%\Fluent Feeds\library.json`.
 
+## Starter feeds
+
+`feeds/hacking-with-ai.opml` has 22 verified feeds on AI security, prompt injection and general
+security research. In the app use **Import OPML** (or File > Import OPML) and pick that file.
+
 ## Run
 
 ```powershell

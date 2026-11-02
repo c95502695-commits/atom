@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head><title>Hacking with AI</title></head>
+  <body>
+    <outline type="rss" text="Embrace The Red" title="Embrace The Red" xmlUrl="https://embracethered.com/blog/index.xml" htmlUrl="https://embracethered.com/blog/"/>
+    <outline type="rss" text="Simon Willison" title="Simon Willison" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="http://simonwillison.net/"/>
+    <outline type="rss" text="Adversa AI" title="Adversa AI" xmlUrl="https://adversa.ai/rss.xml" htmlUrl="https://adversa.ai/"/>
+    <outline type="rss" text="Daniel Miessler" title="Daniel Miessler" xmlUrl="https://danielmiessler.com/feed.rss" htmlUrl="https://danielmiessler.com/"/>
+    <outline type="rss" text="Rez0" title="Rez0" xmlUrl="https://josephthacker.com/feed.xml" htmlUrl="https://josephthacker.com/"/>
+    <outline type="rss" text="HN: prompt injection" title="HN: prompt injection" xmlUrl="https://hnrss.org/newest?q=%22prompt+injection%22" htmlUrl="https://news.ycombinator.com/newest"/>
+    <outline type="rss" text="HN: AI hacking / jailbreak" title="HN: AI hacking / jailbreak" xmlUrl="https://hnrss.org/newest?q=jailbreak+OR+%22AI+security%22+OR+%22LLM+security%22" htmlUrl="https://news.ycombinator.com/newest"/>
+    <outline type="rss" text="Wiz Research" title="Wiz Research" xmlUrl="https://www.wiz.io/feed/rss.xml" htmlUrl="https://www.wiz.io/"/>
+    <outline type="rss" text="Import AI" title="Import AI" xmlUrl="https://importai.substack.com/feed" htmlUrl="https://importai.substack.com/"/>
+    <outline type="rss" text="Latent Space" title="Latent Space" xmlUrl="https://latent.space/feed" htmlUrl="https://latent.space/"/>
+    <outline type="rss" text="Trail of Bits" title="Trail of Bits" xmlUrl="https://blog.trailofbits.com/index.xml" htmlUrl="https://blog.trailofbits.com/"/>
+    <outline type="rss" text="PortSwigger Research" title="PortSwigger Research" xmlUrl="https://portswigger.net/research/rss" htmlUrl="https://portswigger.net/research"/>
+    <outline type="rss" text="Google Project Zero" title="Google Project Zero" xmlUrl="https://projectzero.google/feed.xml" htmlUrl="https://projectzero.google/"/>
+    <outline type="rss" text="Unit 42" title="Unit 42" xmlUrl="https://unit42.paloaltonetworks.com/feed/" htmlUrl="https://unit42.paloaltonetworks.com/"/>
+    <outline type="rss" text="Cisco Talos" title="Cisco Talos" xmlUrl="https://blog.talosintelligence.com/rss/" htmlUrl="https://blog.talosintelligence.com/"/>
+    <outline type="rss" text="Microsoft Security Blog" title="Microsoft Security Blog" xmlUrl="https://www.microsoft.com/en-us/security/blog/feed/" htmlUrl="https://www.microsoft.com/en-us/security/blog/"/>
+    <outline type="rss" text="Schneier on Security" title="Schneier on Security" xmlUrl="https://www.schneier.com/feed/atom/" htmlUrl="https://www.schneier.com/"/>
+    <outline type="rss" text="Krebs on Security" title="Krebs on Security" xmlUrl="https://krebsonsecurity.com/feed/" htmlUrl="https://krebsonsecurity.com/"/>
+    <outline type="rss" text="The Hacker News" title="The Hacker News" xmlUrl="https://feeds.feedburner.com/TheHackersNews" htmlUrl="https://thehackernews.com/"/>
+    <outline type="rss" text="BleepingComputer" title="BleepingComputer" xmlUrl="https://www.bleepingcomputer.com/feed/" htmlUrl="https://www.bleepingcomputer.com/"/>
+    <outline type="rss" text="GitHub Security Lab" title="GitHub Security Lab" xmlUrl="https://github.blog/tag/github-security-lab/feed/" htmlUrl="https://github.blog/tag/github-security-lab/"/>
+    <outline type="rss" text="arXiv cs.CR (security papers, high volume)" title="arXiv cs.CR (security papers, high volume)" xmlUrl="https://export.arxiv.org/rss/cs.CR" htmlUrl="http://rss.arxiv.org/rss/cs.CR"/>
+  </body>
+</opml>
