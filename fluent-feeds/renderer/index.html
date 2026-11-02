@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src https: http: data:; media-src 'none'; connect-src 'none'; font-src 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fluent Feeds</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="titlebar"><span class="app-title">Fluent Feeds</span></div>
+  <div class="app">
+    <nav class="sidebar" aria-label="Subscriptions">
+      <div class="sidebar-actions">
+        <button id="btn-add" class="accent" title="Add feed (Ctrl+N)">＋ Add feed</button>
+        <button id="btn-refresh" class="icon" title="Refresh all (F5)" aria-label="Refresh all">↻</button>
+      </div>
+      <ul id="smart-list" class="nav-list"></ul>
+      <div class="nav-heading">Feeds</div>
+      <ul id="feed-list" class="nav-list scroll"></ul>
+      <div class="sidebar-footer">
+        <button id="btn-import" class="subtle">Import OPML</button>
+        <button id="btn-export" class="subtle">Export OPML</button>
+      </div>
+    </nav>
+
+    <section class="list-pane" aria-label="Articles">
+      <header class="list-header">
+        <h1 id="list-title">All articles</h1>
+        <div class="list-tools">
+          <select id="filter" aria-label="Filter">
+            <option value="all">All</option>
+            <option value="unread">Unread</option>
+            <option value="starred">Starred</option>
+          </select>
+          <button id="btn-mark-all" class="subtle" title="Mark all as read">Mark all read</button>
+        </div>
+        <input id="search" type="search" placeholder="Search articles… (Ctrl+F)" aria-label="Search articles">
+      </header>
+      <ul id="item-list" class="items scroll" tabindex="0"></ul>
+      <div id="status" class="status" role="status"></div>
+    </section>
+
+    <main class="reader-pane" id="reader" aria-label="Reader">
+      <div class="empty" id="reader-empty">
+        <div class="empty-glyph">📰</div>
+        <p>Select an article to start reading</p>
+        <p class="hint">J / K next · previous &nbsp;|&nbsp; M read · S star · O open in browser</p>
+      </div>
+      <article id="article" class="article hidden">
+        <div class="article-actions">
+          <button id="a-star" class="subtle" title="Star (S)">☆ Star</button>
+          <button id="a-read" class="subtle" title="Toggle read (M)">Mark unread</button>
+          <button id="a-open" class="subtle" title="Open in browser (O)">Open in browser ↗</button>
+        </div>
+        <h2 id="a-title"></h2>
+        <div id="a-meta" class="meta"></div>
+        <div id="a-body" class="body"></div>
+      </article>
+    </main>
+  </div>
+
+  <dialog id="dlg-add">
+    <form method="dialog" id="form-add">
+      <h3>Add a feed</h3>
+      <p class="hint">Paste a feed address or a website — Fluent Feeds will look for the feed automatically.</p>
+      <input id="add-url" type="text" placeholder="https://example.com/feed.xml" autocomplete="off" spellcheck="false">
+      <div id="add-error" class="error" role="alert"></div>
+      <div class="dialog-buttons">
+        <button type="button" id="add-cancel">Cancel</button>
+        <button type="submit" id="add-submit" class="accent">Subscribe</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="dlg-feed">
+    <form method="dialog" id="form-feed">
+      <h3>Feed settings</h3>
+      <input id="feed-name" type="text" aria-label="Feed name">
+      <div class="hint" id="feed-url"></div>
+      <div id="feed-error" class="error"></div>
+      <div class="dialog-buttons">
+        <button type="button" id="feed-remove" class="danger">Unsubscribe</button>
+        <span class="spacer"></span>
+        <button type="button" id="feed-cancel">Cancel</button>
+        <button type="submit" class="accent">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="sanitize.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
